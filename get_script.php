@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table, td, th {
-    border: 1px solid black;
-    padding: 5px;
-}
-
-th {text-align: left;}
-</style>
+    <title> Inserting Data </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <?php
@@ -33,7 +28,7 @@ th {text-align: left;}
     <th><strong> Sub Group </strong></th>
     </tr>";
     mysqli_select_db($con,"dev11db");
-    $sql="SELECT * FROM `table 3` ";
+    $sql="SELECT * FROM `table 4` ";
     $result = mysqli_query($con,$sql);
 
     while($row = mysqli_fetch_array($result)) {
